@@ -21,20 +21,20 @@ function mapStateToProps(state) {
 }
 
 class CityList extends Component {
+  componentWillMount() {
+    this.props.setCities();
+  }
+
   render() {
     return (
-      <ul className="cities">
+      <div className="cities">
         {this.props.cities.map((city) => {
           return <City
             city={city}
             key={city.slug} />;
         })}
-      </ul>
+      </div>
     );
-  }
-
-  componentWillMount() {
-    this.props.setCities();
   }
 }
 
