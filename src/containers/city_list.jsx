@@ -29,9 +29,11 @@ class CityList extends Component {
     return (
       <div className="cities">
         {this.props.cities.map((city) => {
-          return <City
-            city={city}
-            key={city.slug} />;
+          return (
+            <City
+              city={city}
+              key={city.slug} />
+          );
         })}
       </div>
     );
