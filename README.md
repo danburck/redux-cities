@@ -1,6 +1,6 @@
-# redux-boilerplate
+# redux-cities
 
-Simple React + Redux starter with the following config:
+`redux-cities`  is a simple React + Redux starter app with the following config:
 
 - React, ReactDOM
 - Redux, React-Redux
