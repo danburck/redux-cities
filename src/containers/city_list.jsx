@@ -23,13 +23,13 @@ function mapStateToProps(state) {
 class CityList extends Component {
   render() {
     return (
-      <div className="cities">
+      <ul className="cities">
         {this.props.cities.map((city) => {
           return <City
             city={city}
             key={city.slug} />;
         })}
-      </div>
+      </ul>
     );
   }
 
